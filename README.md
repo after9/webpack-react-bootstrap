@@ -1,20 +1,59 @@
-# Getting Started
+webpack-react-bootstrap
+=================
 
-## Keywords
-nodejs [官网](http://nodejs.org/) / NPM v5.0.0 [官网](https://www.npmjs.com/)
-webpack [官网](http://webpack.github.io/)
-bootstrap-sass [官网](https://github.com/twbs/bootstrap-sass)
-react [官网](http://facebook.github.io/react/)
+This is an bootstrap/react sample with webpack.
 
-### Install
-Run `npm install`
+The bootstrap is the `sass` version from [here](https://github.com/twbs/bootstrap-sass). 
 
-### Node
-安装后bootstrap的 css&js components均可使用;
-自定义bootstrap sass变量可以在 ./app/scss/_variables.scss 中编辑;
-所有sass模块文件会在 ./app/scss/_variables.scss中统一引入;
+Install
+-----
+Just run `npm install` is ok.
 
-## Enjoy!
+*Note: npm 需要使用v5.0.0以上, 否则不能支持某些loader(例如:sass-loader)*
+
+Usage
+-----
+
+Some sass/css/fonts that needed by Bootstrap, have been configured the correct loaders in `webpack.config.js`, you can modify or add loader that you need on it.
+ 
+ Example:
+
+``` javascript
+module.exports = {
+  module: {
+    loaders: [
+        {
+            test: /\.scss$/,
+            exclude: /(node_modules|bower_components)/,
+            loader: 'style-loader!css-loader!sass-loader?sourceMap'
+        },
+    ]
+  }
+};
+```
+
+Bootstrap javascript components depends on jQuery.
+We add the jQuery to global namespace in webpack app by the following code in `webpack.config.js`:
+
+``` javascript
+plugins: [
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery"
+    })
+]
+```
+
+Custom
+-----
+
+You can set your private variables in the following file:
+
+* `app/scss/_avriables.scss`
+
+
+Enjoy!
+-----
 
 Run `npm run dev` and open [http://localhost:8080/](http://localhost:8080/)
-

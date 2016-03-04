@@ -4,17 +4,13 @@
 
 'use strict';
 
-//import jQuery from '../node_modules/jquery/dist/jquery.js';
-//import jQuery from 'jquery';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './scss/app.scss';
 import '../node_modules/bootstrap-sass/assets/javascripts/bootstrap.js';
-//import Hello from './Component.jsx';
 
 
-//cp from Component.jsx
 class Template extends React.Component {
     render() {
         let htmlVal =

@@ -14,7 +14,7 @@ Just run `npm install` is ok.
 Usage
 -----
 
-Some sass/css/fonts that needed by Bootstrap, have been configured the correct loaders in `webpack.config.js`, you can modify or add loader that you need on it.
+Some sass/css/fonts that needed by Bootstrap, have been configured the correct loaders in `webpack.config.js`, you can modify or add loader that you need in it.
  
  Example:
 
@@ -50,7 +50,7 @@ Custom
 
 You can set your private variables in the following file:
 
-* `app/scss/_avriables.scss`
+`app/scss/_avriables.scss`
 
 
 Enjoy!

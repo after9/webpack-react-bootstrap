@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="400525fc-df6a-41cf-9c61-25a853d0b25c" name="Default" comment="" />
+    <list default="true" id="400525fc-df6a-41cf-9c61-25a853d0b25c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="webpack-react-bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README2.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README2.md">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6751592">
-              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.29617834">
+              <caret line="16" column="156" selection-start-line="16" selection-start-column="156" selection-end-line="16" selection-end-column="156" />
               <folding />
             </state>
           </provider>
@@ -126,9 +128,9 @@
         <option value="$PROJECT_DIR$/app/scss/_index.scss" />
         <option value="$PROJECT_DIR$/app/scss/app.scss" />
         <option value="$PROJECT_DIR$/build/index.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/main.js" />
         <option value="$PROJECT_DIR$/README2.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -443,19 +445,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.379311">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README2.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6751592">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.29617834">
+          <caret line="16" column="156" selection-start-line="16" selection-start-column="156" selection-end-line="16" selection-end-column="156" />
           <folding />
         </state>
       </provider>

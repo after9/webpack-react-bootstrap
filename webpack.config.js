@@ -70,12 +70,20 @@ module.exports = {
         modulesDirectories: ['node_modules'],
         //自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
         extensions: ['', '.js', '.jsx'],
-        alias: {
-            jquery: "node_modules/jquery/src/jquery"
-        }
+        //alias: {
+        //    jquery: "node_modules/jquery/src/jquery"
+        //}
     },
     devServer: {
         contentBase: "./build"
-    }
+    },
+    plugins: [
+        //把jquery变量注入全局
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
+    ],
 };
 
